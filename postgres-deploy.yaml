@@ -10,13 +10,13 @@ spec:
   selector:
    matchLabels:
     name: postgres-pod
-    type: demo-voting-app
+    app: demo-voting-app
   template:
    metadata:
         name: postgres-pod
         labels:
           name: postgres-pod
-          type: demo-voting-app
+          app: demo-voting-app
    spec:
       containers:
         - name: postgres
